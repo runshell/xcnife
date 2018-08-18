@@ -99,8 +99,8 @@ class DbManage:
         for i in range(len(table)):
             print "|",
             for j in range(len(table[0])):
-                print table[i][j].center(length[j])+"|",
-            print "|"
+                print table[i][j].center(length[j])+" |",
+            print ""
         print ""
         
     def execute(self,sql):
