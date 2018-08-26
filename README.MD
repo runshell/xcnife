@@ -12,7 +12,7 @@
 
 下面是一个例子：
 
-```
+```powershell
 PS C:\Users\Cknife> python xnife.py
 useage: xnife.py <url> <password>
 PS C:\Users\Cknife> python .\xnife.py http://127.0.0.1/testt.php asmin
