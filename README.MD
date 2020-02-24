@@ -85,7 +85,7 @@ sql <host> <user> <passwd>      connect the database by the server.
 help                            show this page.
 any other system command        execute the command.
 
-xnife->>sql 127.0.0.1 root 526613
+xnife->>sql 127.0.0.1 root 123456
 You can execute sql now.
 xnife-sql>>
 xnife-sql>>select database()
@@ -107,10 +107,10 @@ xnife-sql>>select database()
 xnife-sql>>select user,password,host from user
 
 | user|                  password                |       host     |
-| root| *1B126DAB7C185C42D26AF5ECDB0ABE292B414D34|    localhost   |
-| root| *1B126DAB7C185C42D26AF5ECDB0ABE292B414D34| desktop-6obu4bp|
-| root| *1B126DAB7C185C42D26AF5ECDB0ABE292B414D34|    127.0.0.1   |
-| root| *1B126DAB7C185C42D26AF5ECDB0ABE292B414D34|       ::1      |
+| root| *1B126DAB7C185C42D26AF5ECDB0ABExxxxxxxxx4|    localhost   |
+| root| *1B126DAB7C185C42D26AF5ECDB0ABExxxxxxxxx4| desktop-6obu4bp|
+| root| *1B126DAB7C185C42D26AF5ECDB0ABExxxxxxxxx4|    127.0.0.1   |
+| root| *1B126DAB7C185C42D26AF5ECDB0ABExxxxxxxxx4|       ::1      |
 
 [+]Execute successfully!
 
